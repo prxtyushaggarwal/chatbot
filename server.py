@@ -24,7 +24,7 @@ if os.path.exists(env_path):
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 
-app = FastAPI(title="Sachi Priya AI Chatbot", version="1.0.0")
+app = FastAPI(title="Pratyush AI Chatbot", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
