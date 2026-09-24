@@ -32,7 +32,7 @@ if "pending_prompt" not in st.session_state:
     st.session_state.pending_prompt = None
 
 PERSONAS = {
-    "Helpful AI Assistant": "You are Sachi Priya AI, a helpful, precise, friendly assistant.",
+    "Helpful AI Assistant": "You are Pratyush AI, a helpful, precise, friendly assistant.",
     "Expert Software Engineer": "You are an expert senior software engineer. Provide robust code with concise explanations.",
     "Data Scientist": "You are an expert data scientist. Explain concepts clearly and write clean Python code.",
 }
