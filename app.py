@@ -7,7 +7,7 @@ from google.genai import types
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 
 st.set_page_config(
-    page_title="Sachi Priya AI - Gemini Chatbot",
+    page_title="Pratyush AI - Gemini Chatbot",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -50,7 +50,7 @@ with st.sidebar:
         st.session_state.pending_prompt = None
         st.rerun()
 
-st.markdown('<div class="app-title">🤖 Sachi Priya AI</div>', unsafe_allow_html=True)
+st.markdown('<div class="app-title">🤖 Pratyush AII</div>', unsafe_allow_html=True)
 st.caption("<center>Powered by Google Gemini</center>", unsafe_allow_html=True)
 
 if not st.session_state.messages:
@@ -72,7 +72,7 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"], avatar="👤" if message["role"] == "user" else "🤖"):
         st.markdown(message["content"])
 
-user_input = st.chat_input("Message Sachi Priya AI...")
+user_input = st.chat_input("Message Pratyush AI...")
 prompt_to_run = user_input or st.session_state.pending_prompt
 
 if prompt_to_run:
