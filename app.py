@@ -91,14 +91,7 @@ if prompt_to_run:
 
     with st.chat_message("assistant", avatar="🤖"):
         generated = False
-        if GEMINI_API_KEY.startswith("AIzaSy"):
-            try:
-                client = genai.Client(api_key=GEMINI_API_KEY)
-                config = types.GenerateContentConfig(
-                    temperature=temperature,
-                    max_output_tokens=max_tokens,
-                    system_instruction=system_instruction,
-                )
+       
                 def stream_response():
                     stream = client.models.generate_content_stream(model=active_model, contents=contents, config=config)
                     for chunk in stream:
